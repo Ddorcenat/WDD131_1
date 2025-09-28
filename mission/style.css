@@ -1,0 +1,92 @@
+/* ===== Base styles ===== */
+html {
+    font-size: 20px;
+    /* default font size */
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #111;
+    line-height: 1.6;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 2rem 0;
+
+}
+
+.page {
+    max-width: 800px;
+    /* wider square */
+    margin: 0 auto;
+    /* center on page */
+    padding: 2rem 2.25rem;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Keep actual text narrower than the square */
+.page header,
+.page main,
+.page footer {
+    max-width: 600px;
+    /* content width */
+    margin: 0 auto;
+}
+
+/* ===== Titles ===== */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 2rem;
+    margin: 0 0 0.75rem 0;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #006EB6;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-align: center;
+    margin: 0 auto 0.25rem;
+    display: block;
+}
+
+.rule {
+    border: 0;
+    height: 1px;
+    background: #cfd6dc;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+
+p.tagline {
+    font-style: italic;
+    margin: 0 0 1rem 0;
+}
+
+
+ol {
+    padding-left: 1.25rem;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+ol li {
+    margin: 0.75rem 0;
+}
+
+footer img.logo {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 2rem auto 0 auto;
+}
