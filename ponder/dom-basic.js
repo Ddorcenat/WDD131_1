@@ -1,5 +1,5 @@
 const newP = document.createElement("p");
-newP.textContent= "This is a new paragraph added by javaScript"
+newP.textContent = "This is a new paragraph added by javaScript"
 document.body.append(newP)
 
 const NewaImg = Document.createElement("img");

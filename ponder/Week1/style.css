@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #111;
+    background: #dcdcdc;
+    line-height: 1.5;
+}
+
+
+#content {
+    max-width: 780px;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    background: #ededed;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+}
+
+
+#content>h1 {
+    text-align: center;
+    font-size: clamp(2rem, 2.5vw + 1rem, 3rem);
+    margin: 0 0 .25rem 0;
+}
+
+#content>p {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #1e73be;
+    margin: 0 0 1rem 0;
+}
+
+
+#content>hr {
+    width: min(540px, 80%);
+    height: 3px;
+    margin: 0.75rem auto 2rem;
+    border: 0;
+    background: #1e73be;
+    opacity: 1;
+}
+
+#content>img {
+    display: block;
+    width: min(600px, 70%);
+    height: auto;
+    margin: 0 auto 2rem;
+}
+
+#topics h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.75rem;
+    margin: 1.75rem 0 .5rem;
+}
+
+#topics .list {
+    width: min(520px, 85%);
+    margin: 0 auto 1.25rem;
+    /* centers the list block */
+    padding-left: 1.1rem;
+    /* bullet indent */
+    color: #333;
+}
+
+@media (max-width: 520px) {
+    #content {
+        margin: 1.25rem auto;
+        padding: 1.5rem 1rem;
+    }
+
+    #topics h2 {
+        font-size: 1.45rem;
+    }
+
+    #content>p {
+        font-size: 1.1rem;
+    }
+}
