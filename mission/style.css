@@ -1,7 +1,5 @@
-/* ===== Base styles ===== */
 html {
     font-size: 20px;
-    /* default font size */
 }
 
 body {
@@ -11,29 +9,23 @@ body {
     background: #f7f7f7;
     margin: 0;
     padding: 2rem 0;
-
 }
 
 .page {
     max-width: 800px;
-    /* wider square */
     margin: 0 auto;
-    /* center on page */
     padding: 2rem 2.25rem;
     background: #fff;
     border: 1px solid #ddd;
 }
 
-/* Keep actual text narrower than the square */
 .page header,
 .page main,
 .page footer {
     max-width: 600px;
-    /* content width */
     margin: 0 auto;
 }
 
-/* ===== Titles ===== */
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -42,7 +34,6 @@ h1 {
     margin: 0 0 0.75rem 0;
 }
 
-/* Subtitle */
 .subtitle {
     color: #006EB6;
     text-transform: uppercase;
@@ -63,7 +54,6 @@ h1 {
     margin: 0 auto 1.5rem auto;
 }
 
-/* ===== Paragraphs ===== */
 p {
     margin: 0 0 1rem 0;
     text-align: left;
