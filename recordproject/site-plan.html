@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cook's Companion Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="site-plan.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Cook's Companion Site Plan</h1>
+        <h2>Dawson Dorcenat</h2>
+        <h2>WDD 131-[section]</h2>
+    </header>
+    <main>
+        <hr />
+        <h2>Overview</h2>
+        <h3>Purpose</h3>
+        <p>
+            This website serves as a digital cookbook that allows users to browse a
+            curated collection of delicious recipes. It aims to solve the problem of
+            organizing scattered recipes by providing an interactive, searchable,
+            and responsive platform where users can filter meals by category and
+            adjust serving sizes dynamically.
+        </p>
+
+        <h3>Audience</h3>
+        <p>
+            The target audience includes home cooks of all skill levels, from busy
+            students looking for quick meals to food enthusiasts seeking new dinner
+            ideas. They are likely accessing the site from mobile devices while in
+            the kitchen or desktops while meal planning, so they value clear
+            readability and easy navigation.
+        </p>
+
+        <h3>Dynamic elements</h3>
+        <p>
+            I will use JavaScript to make the site interactive. The recipe data will
+            be stored in an <strong>Array of Objects</strong> within an ES Module. I
+            will use the <strong>.map()</strong> method to dynamically render the
+            recipe cards to the DOM. I will use <strong>event listeners</strong> on
+            filter buttons to trigger a <strong>.filter()</strong> method (conditional
+            branching) to show specific categories. I will also listen for changes on
+            an input field to dynamically calculate ingredient amounts based on
+            servings.
+        </p>
+
+        <hr />
+        <h2>Branding</h2>
+        <h3>Website Logo</h3>
+        <img src="https://dummyimage.com/150x150/000/fff&text=Cook's+Logo" alt="Cook's Companion Logo" />
+        <hr />
+        <h2>Style Guide</h2>
+
+        <h3>Color Palette</h3>
+        Palette URL:
+        <a href="https://coolors.co/d35400-2c3e50-f39c12-ecf0f1" target="_blank">
+            https://coolors.co/d35400-2c3e50-f39c12-ecf0f1
+        </a>
+
+        <table class="colors">
+            <tbody>
+                <tr>
+                    <th>Primary</th>
+                    <th>Secondary</th>
+                    <th>Accent 1</th>
+                    <th>Accent 2</th>
+                </tr>
+                <tr>
+                    <td class="primary">#D35400</td>
+                    <td class="secondary">#2C3E50</td>
+                    <td class="accent1">#F39C12</td>
+                    <td class="accent2">#ECF0F1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Typography</h3>
+        <h4>
+            Heading Font: Merriweather
+        </h4>
+        <h4>
+            Paragraph Font: Open Sans
+        </h4>
+        <h3>Normal paragraph example</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
+        <h3>Colored paragraph example</h3>
+        <p class="colored">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+
+        <h3>Navigation</h3>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Recipes</a>
+        </nav>
+        <hr />
+
+        <h2>Content</h2>
+        <h3>Home page</h3>
+        <p>
+            <strong>Headline:</strong> "Master the Kitchen with Ease"<br />
+            <strong>Sub-headline:</strong> "Discover simple, delicious recipes for every occasion."<br />
+            <strong>Intro:</strong> Welcome to Cook's Companion, your go-to source for reliable recipes. Whether you are
+            craving a hearty breakfast or a quick dinner, we have curated the best dishes just for you.<br />
+            <strong>Images:</strong> Hero image of a set table; icons for "Fast," "Easy," and "Tasty."
+        </p>
+
+        <h3>Recipes Page (Child Page)</h3>
+        <p>
+            <strong>Interactive Elements:</strong> Filter buttons (Breakfast, Dinner, Dessert).<br />
+            <strong>Data Structure (Array of Objects):</strong><br />
+        </p>
+        <pre>
+[
+{
+    "id": 1,
+    "name": "Classic Waffles",
+    "category": "Breakfast",
+    "prepTime": "15 min",
+    "image": "images/waffles.jpg",
+    "description": "Crispy on the outside, fluffy on the inside."
+},
+{
+    "id": 2,
+    "name": "Grilled Salmon",
+    "category": "Dinner",
+    "prepTime": "25 min",
+    "image": "images/salmon.jpg",
+    "description": "Fresh atlantic salmon with lemon and herbs."
+}
+]
+    </pre>
+
+        <h2>Wireframes</h2>
+        <p>
+            Create two wireframes for your site. One for each page and list them
+            here
+        </p>
+
+        <h3>Home</h3>
+        <p>
+            The Home page features a large Hero Image with the main title centered over it.
+            Below that is a "Why Choose Us" section with 3 columns of text/icons.
+            The footer stays at the bottom.
+        </p>
+        <img src="image/homepage.jpg" alt="home page wireframe" />
+
+        <h3>Recipes (Child Page)</h3>
+        <p>
+            The Recipes page has a filter bar immediately under the header with buttons for categories.
+            Below that is a CSS Grid layout displaying recipe cards (Image + Title + Button).
+        </p>
+        <img src="image/Diagramme sans nom.drawio.jpg"
+            alt="recipes page wireframe" />
+    </main>
+</body>
+
+</html>
