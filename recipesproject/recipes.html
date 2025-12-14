@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cook's Companion | Recipes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+</head>
+
+<body data-page-type="all">
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" />
+
+    <div class="page">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="logo">
+                    <span class="logo-mark">👩🏾‍🍳</span>
+                    <span class="logo-text">Cook's Companion</span>
+                </a>
+
+                <div class="header-right">
+                    <nav class="main-nav" aria-label="Main navigation">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="recipes.html" class="nav-link active">Recipes</a>
+                    </nav>
+
+                    <label class="theme-toggle" for="theme-toggle">
+                        <span class="theme-toggle-text">Dark</span>
+                        <span class="theme-toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="recipes-hero">
+                <div class="container">
+                    <h1>All Recipes</h1>
+                    <p>
+                        Browse recipes pulled live from TheMealDB API. Search by dish name
+                        or ingredient (for example: <em>chicken</em>, <em>pasta</em>, or
+                        <em>salad</em>).
+                    </p>
+
+                    <form id="recipe-search-form" class="recipe-search-form">
+                        <label for="recipe-search-input" class="visually-hidden">Search recipes</label>
+                        <input type="search" id="recipe-search-input" class="recipe-search-input"
+                            placeholder="Search recipes (e.g., chicken, pasta, curry)" />
+                        <button type="submit" class="btn-primary">Search</button>
+                    </form>
+
+                    <p id="recipe-status" class="recipe-status" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="recipes-list">
+                <div class="container">
+                    <div id="recipe-results" class="recipe-grid" aria-live="polite"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>© 2025 Cook's Companion</p>
+
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <img src="image/instagram copy.png" alt="Instagram" />
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <img src="image/facebook copy.png" alt="Facebook" />
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <img src="image/twitter copy 2.png" alt="Twitter" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
