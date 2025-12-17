@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RecipeBook</title>
+    <meta name="description" content="RecipeBook is a simple recipe site where you can search and browse recipes." />
+    <meta name="author" content="Dawson" />
+
+    <link rel="icon" href="images/recipe-book.png" />
+
+    <link rel="stylesheet" href="recipes.css" />
+
+    <meta property="og:title" content="RecipeBook" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="RecipeBook is a simple recipe site where you can search and browse recipes." />
+    <meta property="og:image" content="images/recipe-book.png" />
+    <meta property="og:url" content="URL of the page" />
+    <meta name="twitter:card" content="summary_large_image" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="brand">
+            <img class="brand__logo" src="images/recipe-book.png" alt="Recipe Book logo" width="52" height="52" />
+            <span class="brand__name">RecipeBook</span>
+        </div>
+    </header>
+
+    <main id="main" class="page">
+        <form class="search" role="search">
+            <label class="search__label" for="searchInput">Find a recipe</label>
+            <div class="search__controls">
+                <input id="searchInput" class="search__input" type="search" name="search" placeholder="Find a recipe"
+                    autocomplete="off" />
+                <button class="search__button" type="submit" aria-label="Search">
+                    🔍
+                </button>
+            </div>
+        </form>
+
+        <section class="results" aria-label="Recipe results">
+            <div id="resultsList" class="results__list"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer__left">
+            <a class="attribution" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons
+                created by Freepik - Flaticon</a>
+        </div>
+
+        <div class="footer__right">
+            <div class="social">
+                <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon" /></a>
+                <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon" /></a>
+                <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

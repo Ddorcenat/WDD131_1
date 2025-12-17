@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Character Card</title>
+    <meta name="description" content="WDD 131 Character Card" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Snortleblat Character Card">
+    <meta property="og:description" content="A JavaScript Character Object Demo">
+    <meta property="og:image" content="images/snortleblat.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Snortleblat Character Card">
+    <meta name="twitter:description" content="A JavaScript Character Object Demo">
+    <meta name="twitter:image" content="images/snortleblat.webp">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="card">
+        <img src="images/snortleblat.webp" alt="Swamp Beast Diplomat" class="image">
+
+        <div class="name" id="name">Snortleblat</div>
+
+        <div class="stats">
+            <p id="class"></p>
+            <p id="level"></p>
+            <p id="health"></p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="character.attacked()">Attacked</button>
+            <button onclick="character.levelUp()">Level Up</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

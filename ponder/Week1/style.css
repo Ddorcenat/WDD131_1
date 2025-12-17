@@ -15,7 +15,6 @@ body {
     line-height: 1.5;
 }
 
-
 #content {
     max-width: 780px;
     margin: 3rem auto;
@@ -24,7 +23,6 @@ body {
     border: 1px solid #cfcfcf;
     border-radius: 10px;
 }
-
 
 #content>h1 {
     text-align: center;
@@ -38,7 +36,6 @@ body {
     color: #1e73be;
     margin: 0 0 1rem 0;
 }
-
 
 #content>hr {
     width: min(540px, 80%);

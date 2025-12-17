@@ -1,5 +1,5 @@
 html {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 body {
@@ -8,15 +8,25 @@ body {
     line-height: 1.6;
     background: #f7f7f7;
     margin: 0;
-    padding: 2rem 0;
+    padding: 0;
+}
+
+body.dark {
+    background: #2f2f2f;
+    color: #f2f2f2;
 }
 
 .page {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 2.25rem;
+    margin: 4rem auto;
+    padding: 2.75rem 3rem;
     background: #fff;
     border: 1px solid #ddd;
+}
+
+body.dark .page {
+    background: #3a3a3a;
+    border: 2px solid #7a7a7a;
 }
 
 .page header,
@@ -26,23 +36,43 @@ body {
     margin: 0 auto;
 }
 
+header select {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 9999;
+
+    font-size: 0.9rem;
+    padding: 0.15rem 0.35rem;
+}
+
+body.dark header select {
+    background: #ffffff;
+    color: #111;
+    border: 1px solid #666;
+}
+
 h1 {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 2rem;
+    letter-spacing: 0.14em;
+    font-size: 2.1rem;
     margin: 0 0 0.75rem 0;
 }
 
 .subtitle {
     color: #006EB6;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.18em;
     font-weight: 600;
     font-size: 0.85rem;
     text-align: center;
-    margin: 0 auto 0.25rem;
+    margin: 0 auto 0.8rem;
     display: block;
+}
+
+body.dark .subtitle {
+    color: #7fc0ff;
 }
 
 .rule {
@@ -50,33 +80,36 @@ h1 {
     height: 1px;
     background: #cfd6dc;
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto 2rem auto;
+}
+
+body.dark .rule {
+    background: #bdbdbd;
 }
 
 p {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.25rem 0;
     text-align: left;
 }
 
 p.tagline {
     font-style: italic;
-    margin: 0 0 1rem 0;
+    margin-top: 2.25rem;
+    margin-bottom: 1.25rem;
 }
 
-
 ol {
-    padding-left: 1.25rem;
+    padding-left: 2.1rem;
     margin: 0.5rem 0 1.5rem 0;
 }
 
 ol li {
-    margin: 0.75rem 0;
+    margin: 1.1rem 0;
 }
 
 footer img.logo {
     display: block;
-    width: 150px;
+    width: 170px;
     height: auto;
-    margin: 2rem auto 0 auto;
+    margin: 2.25rem auto 0 auto;
 }
